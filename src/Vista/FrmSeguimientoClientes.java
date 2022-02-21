@@ -206,13 +206,13 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lblTipoCartera;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblValMora;
-    private javax.swing.JTextField txtDiasMora;
+    public javax.swing.JTextField txtDiasMora;
     public javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtFechaMora;
+    public javax.swing.JTextField txtFechaMora;
     public javax.swing.JTextField txtNum_Factura;
     public javax.swing.JTextField txtTel_Residencia;
     public javax.swing.JTextField txtTel_Trabajo;
-    private javax.swing.JTextField txtTipoCartera;
-    private javax.swing.JTextField txtValMora;
+    public javax.swing.JTextField txtTipoCartera;
+    public javax.swing.JTextField txtValMora;
     // End of variables declaration//GEN-END:variables
 }

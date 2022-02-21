@@ -39,6 +39,10 @@ public class FrmClientes extends javax.swing.JFrame {
         TextCelula = new javax.swing.JTextField();
         txtLugarEx = new javax.swing.JTextField();
         lblLugarEx = new javax.swing.JLabel();
+        lblTel_Residencia = new javax.swing.JLabel();
+        txtTel_Residencia = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        txtTel_Trabajo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -84,6 +88,16 @@ public class FrmClientes extends javax.swing.JFrame {
 
         lblLugarEx.setText("Lugar Expedicion ");
 
+        lblTel_Residencia.setText("Teléfono de residencia");
+
+        txtTel_Residencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTel_ResidenciaActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Teléfono de trabajo ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -105,7 +119,9 @@ public class FrmClientes extends javax.swing.JFrame {
                         .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblDepartamento)
-                            .addComponent(lblLugarEx))))
+                            .addComponent(lblLugarEx)
+                            .addComponent(lblTel_Residencia)
+                            .addComponent(jLabel1))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtDepartamento, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
@@ -113,7 +129,9 @@ public class FrmClientes extends javax.swing.JFrame {
                     .addComponent(txtDireccion_Residencial)
                     .addComponent(txtCiudad)
                     .addComponent(TextCelula)
-                    .addComponent(txtLugarEx))
+                    .addComponent(txtLugarEx)
+                    .addComponent(txtTel_Residencia)
+                    .addComponent(txtTel_Trabajo))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -145,7 +163,15 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtLugarEx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblLugarEx))
-                .addContainerGap(153, Short.MAX_VALUE))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTel_Residencia)
+                    .addComponent(txtTel_Residencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtTel_Trabajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         pack();
@@ -166,6 +192,10 @@ public class FrmClientes extends javax.swing.JFrame {
     private void TextCelulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextCelulaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextCelulaActionPerformed
+
+    private void txtTel_ResidenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTel_ResidenciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTel_ResidenciaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,6 +234,7 @@ public class FrmClientes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField TextCelula;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblCelula;
     private javax.swing.JLabel lblCiudad;
     public javax.swing.JLabel lblClientes;
@@ -211,10 +242,13 @@ public class FrmClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lblDireccion_Residencial;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblLugarEx;
+    private javax.swing.JLabel lblTel_Residencia;
     public javax.swing.JTextField txtCiudad;
     public javax.swing.JTextField txtDepartamento;
     public javax.swing.JTextField txtDireccion_Residencial;
     public javax.swing.JTextField txtEmail;
     public javax.swing.JTextField txtLugarEx;
+    private javax.swing.JTextField txtTel_Residencia;
+    private javax.swing.JTextField txtTel_Trabajo;
     // End of variables declaration//GEN-END:variables
 }

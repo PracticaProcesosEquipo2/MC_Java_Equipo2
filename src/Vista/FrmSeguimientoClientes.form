@@ -33,26 +33,32 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="lblTipoCartera" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblFechaMora" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblDiasMora" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblValMora" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblEmail" max="32767" attributes="0"/>
-                      <Component id="lblTel_Residencia" alignment="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="lblTel_Trabajo" alignment="0" max="32767" attributes="0"/>
-                      <Component id="lblNum_Factura" alignment="0" max="32767" attributes="0"/>
-                  </Group>
                   <Component id="lblProfesion" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblCiudad" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="lblCiudad" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="lblTipoCartera" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFechaMora" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDiasMora" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblValMora" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblEmail" max="32767" attributes="0"/>
+                          <Component id="lblTel_Residencia" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="lblTel_Trabajo" alignment="0" max="32767" attributes="0"/>
+                          <Component id="lblNum_Factura" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
               <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="txtCiudad" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtProfesion" max="32767" attributes="0"/>
+                          <Component id="txtProfesion" alignment="1" max="32767" attributes="0"/>
                           <Component id="txtNum_Factura" alignment="0" pref="95" max="32767" attributes="0"/>
                           <Component id="txtTel_Trabajo" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtTel_Residencia" alignment="0" max="32767" attributes="0"/>
@@ -61,10 +67,11 @@
                           <Component id="txtDiasMora" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtFechaMora" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtTipoCartera" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtFecha_Acuerdo_Uno" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtFecha_Acuerdo_Dos" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="lblDepartamento" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="lblId" min="-2" max="-2" attributes="0"/>
                               <Component id="lblCelula" min="-2" max="-2" attributes="0"/>
@@ -76,6 +83,11 @@
                           <Component id="lblSaldo_restante" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                           <Component id="lblDirecionResidencial" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblDepartamento" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -89,10 +101,12 @@
                           <Component id="txtTipo_cobro" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtDirecionResidencial" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtDepartamento" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtAcuerdo_Uno" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtAcuerdo_Dos" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="77" max="32767" attributes="0"/>
+              <EmptySpace pref="40" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -190,14 +204,35 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblCiudad" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtCiudad" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="lblCiudad" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="127" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAcuerdo_Uno" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAcuerdo_Dos" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="txtFecha_Acuerdo_Uno" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="txtFecha_Acuerdo_Dos" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="47" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -416,6 +451,52 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtDepartamento">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha_Acuerdo_Uno"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Acuerdo_Uno"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha_Acuerdo_Dos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Acuerdo_Dos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtFecha_Acuerdo_Uno">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFecha_Acuerdo_UnoActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAcuerdo_Uno">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAcuerdo_UnoActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtFecha_Acuerdo_Dos">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAcuerdo_Dos">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>

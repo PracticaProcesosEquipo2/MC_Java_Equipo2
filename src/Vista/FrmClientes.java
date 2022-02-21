@@ -47,6 +47,10 @@ public class FrmClientes extends javax.swing.JFrame {
         lblNom = new javax.swing.JLabel();
         txtProfesion = new javax.swing.JTextField();
         lblProfesion = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtNum_Factura = new javax.swing.JTextField();
+        txtFecha_Credito = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -118,6 +122,16 @@ public class FrmClientes extends javax.swing.JFrame {
 
         lblProfesion.setText("Profesion ");
 
+        jLabel2.setText("Numero de Factura");
+
+        jLabel3.setText("Fecha de  credito");
+
+        txtNum_Factura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNum_FacturaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -143,7 +157,9 @@ public class FrmClientes extends javax.swing.JFrame {
                             .addComponent(lblTel_Residencia)
                             .addComponent(jLabel1)
                             .addComponent(lblNom)
-                            .addComponent(lblProfesion))))
+                            .addComponent(lblProfesion)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtProfesion)
@@ -155,7 +171,9 @@ public class FrmClientes extends javax.swing.JFrame {
                     .addComponent(txtLugarEx)
                     .addComponent(txtTel_Residencia)
                     .addComponent(txtTel_Trabajo)
-                    .addComponent(txtNom, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(txtNom, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtNum_Factura)
+                    .addComponent(txtFecha_Credito))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -203,7 +221,15 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtProfesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblProfesion))
-                .addContainerGap(309, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtNum_Factura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtFecha_Credito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
 
         pack();
@@ -236,6 +262,10 @@ public class FrmClientes extends javax.swing.JFrame {
     private void txtProfesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProfesionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtProfesionActionPerformed
+
+    private void txtNum_FacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNum_FacturaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNum_FacturaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -275,6 +305,8 @@ public class FrmClientes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JTextField TextCelula;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblCelula;
     private javax.swing.JLabel lblCiudad;
     public javax.swing.JLabel lblClientes;
@@ -289,8 +321,10 @@ public class FrmClientes extends javax.swing.JFrame {
     public javax.swing.JTextField txtDepartamento;
     public javax.swing.JTextField txtDireccion_Residencial;
     public javax.swing.JTextField txtEmail;
+    public javax.swing.JTextField txtFecha_Credito;
     public javax.swing.JTextField txtLugarEx;
     public javax.swing.JTextField txtNom;
+    public javax.swing.JTextField txtNum_Factura;
     public javax.swing.JTextField txtProfesion;
     public javax.swing.JTextField txtTel_Residencia;
     public javax.swing.JTextField txtTel_Trabajo;

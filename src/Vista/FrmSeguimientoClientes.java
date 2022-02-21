@@ -68,6 +68,14 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         txtCiudad = new javax.swing.JTextField();
         lblDepartamento = new javax.swing.JLabel();
         txtDepartamento = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txtFecha_Acuerdo_Uno = new javax.swing.JTextField();
+        txtAcuerdo_Uno = new javax.swing.JTextField();
+        txtFecha_Acuerdo_Dos = new javax.swing.JTextField();
+        txtAcuerdo_Dos = new javax.swing.JTextField();
 
         jLabel2.setText("jLabel2");
 
@@ -134,6 +142,26 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
 
         lblDepartamento.setText("Departamento");
 
+        jLabel5.setText("Fecha_Acuerdo_Uno");
+
+        jLabel6.setText("Acuerdo_Uno");
+
+        jLabel7.setText("Fecha_Acuerdo_Dos");
+
+        jLabel8.setText("Acuerdo_Dos");
+
+        txtFecha_Acuerdo_Uno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFecha_Acuerdo_UnoActionPerformed(evt);
+            }
+        });
+
+        txtAcuerdo_Uno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAcuerdo_UnoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -141,35 +169,40 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(lblTipoCartera)
-                        .addComponent(lblFechaMora)
-                        .addComponent(lblDiasMora)
-                        .addComponent(lblValMora)
-                        .addComponent(lblEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblTel_Residencia, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addComponent(lblTel_Trabajo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblNum_Factura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(lblProfesion)
-                    .addComponent(lblCiudad))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel5)
+                        .addComponent(jLabel7))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(lblCiudad)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblTipoCartera)
+                            .addComponent(lblFechaMora)
+                            .addComponent(lblDiasMora)
+                            .addComponent(lblValMora)
+                            .addComponent(lblEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblTel_Residencia, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(lblTel_Trabajo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblNum_Factura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(61, 61, 61)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblTitulo)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(txtCiudad, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtProfesion)
-                            .addComponent(txtNum_Factura, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
-                            .addComponent(txtTel_Trabajo, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtTel_Residencia, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtEmail, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtValMora, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtDiasMora, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtFechaMora, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtTipoCartera, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtCiudad)
+                            .addComponent(txtProfesion, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtNum_Factura, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                            .addComponent(txtTel_Trabajo)
+                            .addComponent(txtTel_Residencia)
+                            .addComponent(txtEmail)
+                            .addComponent(txtValMora)
+                            .addComponent(txtDiasMora)
+                            .addComponent(txtFechaMora)
+                            .addComponent(txtTipoCartera)
+                            .addComponent(txtFecha_Acuerdo_Uno)
+                            .addComponent(txtFecha_Acuerdo_Dos))
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblDepartamento)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(lblId)
                                 .addComponent(lblCelula)
@@ -179,7 +212,11 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(lblSaldo_restante)
                             .addComponent(jLabel4)
-                            .addComponent(lblDirecionResidencial))
+                            .addComponent(lblDirecionResidencial)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel6)
+                                .addComponent(lblDepartamento)
+                                .addComponent(jLabel8)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtId)
@@ -191,8 +228,10 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                             .addComponent(txtSaldo_restante)
                             .addComponent(txtTipo_cobro)
                             .addComponent(txtDirecionResidencial)
-                            .addComponent(txtDepartamento))))
-                .addContainerGap(77, Short.MAX_VALUE))
+                            .addComponent(txtDepartamento)
+                            .addComponent(txtAcuerdo_Uno)
+                            .addComponent(txtAcuerdo_Dos))))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -267,12 +306,28 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                             .addComponent(txtProfesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblCiudad)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(lblDepartamento)
-                        .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(127, Short.MAX_VALUE))
+                        .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCiudad, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(txtAcuerdo_Uno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addComponent(txtAcuerdo_Dos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtFecha_Acuerdo_Uno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtFecha_Acuerdo_Dos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
@@ -289,6 +344,14 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     private void txtLugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLugarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtLugarActionPerformed
+
+    private void txtFecha_Acuerdo_UnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFecha_Acuerdo_UnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFecha_Acuerdo_UnoActionPerformed
+
+    private void txtAcuerdo_UnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAcuerdo_UnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAcuerdo_UnoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -330,6 +393,10 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel lblCelula;
     private javax.swing.JLabel lblCiudad;
     private javax.swing.JLabel lblDepartamento;
@@ -348,6 +415,8 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblValMora;
     private javax.swing.JLabel ldlLugarExpedicion;
+    public javax.swing.JTextField txtAcuerdo_Dos;
+    public javax.swing.JTextField txtAcuerdo_Uno;
     public javax.swing.JTextField txtCedula;
     public javax.swing.JTextField txtCiudad;
     public javax.swing.JTextField txtDepartamento;
@@ -355,6 +424,8 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     public javax.swing.JTextField txtDirecionResidencial;
     public javax.swing.JTextField txtEmail;
     public javax.swing.JTextField txtFechaMora;
+    public javax.swing.JTextField txtFecha_Acuerdo_Dos;
+    public javax.swing.JTextField txtFecha_Acuerdo_Uno;
     public javax.swing.JTextField txtId;
     public javax.swing.JTextField txtInt_mora;
     public javax.swing.JTextField txtLugar;

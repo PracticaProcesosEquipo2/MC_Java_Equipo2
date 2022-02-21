@@ -29,12 +29,23 @@
               <EmptySpace min="-2" pref="215" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblDepartamento" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblDireccion_Residencial" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
-                  <Component id="lblCiudad" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDireccion_Residencial" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="lblCiudad" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                          <Component id="lblCelula" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblDepartamento" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLugarEx" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -42,6 +53,8 @@
                   <Component id="txtEmail" max="32767" attributes="0"/>
                   <Component id="txtDireccion_Residencial" max="32767" attributes="0"/>
                   <Component id="txtCiudad" max="32767" attributes="0"/>
+                  <Component id="TextCelula" max="32767" attributes="0"/>
+                  <Component id="txtLugarEx" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -54,8 +67,8 @@
               <Component id="lblClientes" min="-2" pref="62" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -72,7 +85,17 @@
                   <Component id="lblCiudad" min="-2" max="-2" attributes="0"/>
                   <Component id="txtCiudad" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="229" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblCelula" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextCelula" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtLugarEx" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblLugarEx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="153" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -144,6 +167,26 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCelula">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cedula"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TextCelula">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextCelulaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtLugarEx">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblLugarEx">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lugar Expedicion "/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

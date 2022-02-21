@@ -36,6 +36,14 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         txtDiasMora = new javax.swing.JTextField();
         lblValMora = new javax.swing.JLabel();
         txtValMora = new javax.swing.JTextField();
+        lblEmail = new javax.swing.JLabel();
+        lblTel_Residencia = new javax.swing.JLabel();
+        lblTel_Trabajo = new javax.swing.JLabel();
+        lblNum_Factura = new javax.swing.JLabel();
+        txtEmail = new javax.swing.JTextField();
+        txtTel_Residencia = new javax.swing.JTextField();
+        txtTel_Trabajo = new javax.swing.JTextField();
+        txtNum_Factura = new javax.swing.JTextField();
 
         jLabel2.setText("jLabel2");
 
@@ -64,24 +72,41 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
 
         lblValMora.setText("Val_Mora");
 
+        lblEmail.setText("Email");
+
+        lblTel_Residencia.setText("Tel_Residencia");
+
+        lblTel_Trabajo.setText("Tel_Trabajo");
+
+        lblNum_Factura.setText("Num_Factura");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblTipoCartera)
                     .addComponent(lblFechaMora)
                     .addComponent(lblDiasMora)
-                    .addComponent(lblValMora))
-                .addGap(76, 76, 76)
+                    .addComponent(lblValMora)
+                    .addComponent(lblEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTel_Residencia, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
+                    .addComponent(lblTel_Trabajo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblNum_Factura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(61, 61, 61)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtValMora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtDiasMora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtFechaMora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTipoCartera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblTitulo))
+                    .addComponent(lblTitulo)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(txtNum_Factura, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                        .addComponent(txtTel_Trabajo, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtTel_Residencia, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtEmail, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtValMora, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtDiasMora, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtFechaMora, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtTipoCartera, javax.swing.GroupLayout.Alignment.LEADING)))
                 .addContainerGap(132, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -105,7 +130,23 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblValMora)
                     .addComponent(txtValMora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(215, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblEmail)
+                    .addComponent(txtEmail, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblTel_Residencia)
+                    .addComponent(txtTel_Residencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTel_Trabajo)
+                    .addComponent(txtTel_Trabajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNum_Factura)
+                    .addComponent(txtNum_Factura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         pack();
@@ -157,12 +198,20 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblDiasMora;
+    private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblFechaMora;
+    private javax.swing.JLabel lblNum_Factura;
+    private javax.swing.JLabel lblTel_Residencia;
+    private javax.swing.JLabel lblTel_Trabajo;
     private javax.swing.JLabel lblTipoCartera;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblValMora;
     private javax.swing.JTextField txtDiasMora;
+    public javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtFechaMora;
+    public javax.swing.JTextField txtNum_Factura;
+    public javax.swing.JTextField txtTel_Residencia;
+    public javax.swing.JTextField txtTel_Trabajo;
     private javax.swing.JTextField txtTipoCartera;
     private javax.swing.JTextField txtValMora;
     // End of variables declaration//GEN-END:variables

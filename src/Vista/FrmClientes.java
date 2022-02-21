@@ -31,6 +31,10 @@ public class FrmClientes extends javax.swing.JFrame {
         txtDepartamento = new javax.swing.JTextField();
         lblEmail = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
+        lblDireccion_Residencial = new javax.swing.JLabel();
+        txtDireccion_Residencial = new javax.swing.JTextField();
+        lblCiudad = new javax.swing.JLabel();
+        txtCiudad = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,6 +54,22 @@ public class FrmClientes extends javax.swing.JFrame {
 
         lblEmail.setText("Email");
 
+        lblDireccion_Residencial.setText("Direccion Residencial");
+
+        txtDireccion_Residencial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDireccion_ResidencialActionPerformed(evt);
+            }
+        });
+
+        lblCiudad.setText("Ciudad");
+
+        txtCiudad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCiudadActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -62,11 +82,15 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblDepartamento)
-                    .addComponent(lblEmail))
-                .addGap(42, 42, 42)
+                    .addComponent(lblEmail)
+                    .addComponent(lblDireccion_Residencial, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtDepartamento, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
-                    .addComponent(txtEmail))
+                    .addComponent(txtEmail)
+                    .addComponent(txtDireccion_Residencial)
+                    .addComponent(txtCiudad))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -82,7 +106,15 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEmail)
                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(309, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDireccion_Residencial)
+                    .addComponent(txtDireccion_Residencial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblCiudad)
+                    .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
 
         pack();
@@ -91,6 +123,14 @@ public class FrmClientes extends javax.swing.JFrame {
     private void txtDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDepartamentoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDepartamentoActionPerformed
+
+    private void txtDireccion_ResidencialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccion_ResidencialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDireccion_ResidencialActionPerformed
+
+    private void txtCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCiudadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCiudadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -128,10 +168,14 @@ public class FrmClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblCiudad;
     public javax.swing.JLabel lblClientes;
     private javax.swing.JLabel lblDepartamento;
+    private javax.swing.JLabel lblDireccion_Residencial;
     private javax.swing.JLabel lblEmail;
-    private javax.swing.JTextField txtDepartamento;
-    private javax.swing.JTextField txtEmail;
+    public javax.swing.JTextField txtCiudad;
+    public javax.swing.JTextField txtDepartamento;
+    public javax.swing.JTextField txtDireccion_Residencial;
+    public javax.swing.JTextField txtEmail;
     // End of variables declaration//GEN-END:variables
 }

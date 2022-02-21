@@ -32,19 +32,29 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="lblTipoCartera" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lblFechaMora" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lblDiasMora" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lblValMora" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblEmail" max="32767" attributes="0"/>
+                  <Component id="lblTel_Residencia" alignment="0" pref="79" max="32767" attributes="0"/>
+                  <Component id="lblTel_Trabajo" alignment="0" max="32767" attributes="0"/>
+                  <Component id="lblNum_Factura" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="txtValMora" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDiasMora" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFechaMora" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtTipoCartera" min="-2" max="-2" attributes="0"/>
                   <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="txtNum_Factura" alignment="0" pref="95" max="32767" attributes="0"/>
+                      <Component id="txtTel_Trabajo" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtTel_Residencia" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtEmail" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtValMora" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtDiasMora" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtFechaMora" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtTipoCartera" alignment="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace pref="132" max="32767" attributes="0"/>
           </Group>
@@ -75,7 +85,27 @@
                   <Component id="lblValMora" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtValMora" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="215" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEmail" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="lblTel_Residencia" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTel_Residencia" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblTel_Trabajo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTel_Trabajo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblNum_Factura" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNum_Factura" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="61" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -122,6 +152,46 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtValMora">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEmail">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTel_Residencia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tel_Residencia"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTel_Trabajo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tel_Trabajo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNum_Factura">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Num_Factura"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEmail">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTel_Residencia">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTel_Trabajo">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNum_Factura">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

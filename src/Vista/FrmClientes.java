@@ -43,6 +43,10 @@ public class FrmClientes extends javax.swing.JFrame {
         txtTel_Residencia = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         txtTel_Trabajo = new javax.swing.JTextField();
+        txtNom = new javax.swing.JTextField();
+        lblNom = new javax.swing.JLabel();
+        txtProfesion = new javax.swing.JTextField();
+        lblProfesion = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -98,13 +102,29 @@ public class FrmClientes extends javax.swing.JFrame {
 
         jLabel1.setText("Teléfono de trabajo ");
 
+        txtNom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomActionPerformed(evt);
+            }
+        });
+
+        lblNom.setText("Nombre Completo");
+
+        txtProfesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtProfesionActionPerformed(evt);
+            }
+        });
+
+        lblProfesion.setText("Profesion ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(185, 185, 185)
-                .addComponent(lblClientes, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                .addComponent(lblClientes, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
                 .addGap(215, 215, 215))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,9 +141,12 @@ public class FrmClientes extends javax.swing.JFrame {
                             .addComponent(lblDepartamento)
                             .addComponent(lblLugarEx)
                             .addComponent(lblTel_Residencia)
-                            .addComponent(jLabel1))))
+                            .addComponent(jLabel1)
+                            .addComponent(lblNom)
+                            .addComponent(lblProfesion))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtProfesion)
                     .addComponent(txtDepartamento, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
                     .addComponent(txtEmail)
                     .addComponent(txtDireccion_Residencial)
@@ -131,7 +154,8 @@ public class FrmClientes extends javax.swing.JFrame {
                     .addComponent(TextCelula)
                     .addComponent(txtLugarEx)
                     .addComponent(txtTel_Residencia)
-                    .addComponent(txtTel_Trabajo))
+                    .addComponent(txtTel_Trabajo)
+                    .addComponent(txtNom, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -171,7 +195,15 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtTel_Trabajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNom))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtProfesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProfesion))
+                .addContainerGap(309, Short.MAX_VALUE))
         );
 
         pack();
@@ -196,6 +228,14 @@ public class FrmClientes extends javax.swing.JFrame {
     private void txtTel_ResidenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTel_ResidenciaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTel_ResidenciaActionPerformed
+
+    private void txtNomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomActionPerformed
+
+    private void txtProfesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProfesionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtProfesionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -233,7 +273,7 @@ public class FrmClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField TextCelula;
+    public javax.swing.JTextField TextCelula;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblCelula;
     private javax.swing.JLabel lblCiudad;
@@ -242,13 +282,17 @@ public class FrmClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lblDireccion_Residencial;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblLugarEx;
+    private javax.swing.JLabel lblNom;
+    private javax.swing.JLabel lblProfesion;
     private javax.swing.JLabel lblTel_Residencia;
     public javax.swing.JTextField txtCiudad;
     public javax.swing.JTextField txtDepartamento;
     public javax.swing.JTextField txtDireccion_Residencial;
     public javax.swing.JTextField txtEmail;
     public javax.swing.JTextField txtLugarEx;
-    private javax.swing.JTextField txtTel_Residencia;
-    private javax.swing.JTextField txtTel_Trabajo;
+    public javax.swing.JTextField txtNom;
+    public javax.swing.JTextField txtProfesion;
+    public javax.swing.JTextField txtTel_Residencia;
+    public javax.swing.JTextField txtTel_Trabajo;
     // End of variables declaration//GEN-END:variables
 }

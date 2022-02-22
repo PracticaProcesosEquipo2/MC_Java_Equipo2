@@ -42,6 +42,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblTCartera" min="-2" pref="92" max="-2" attributes="0"/>
                           <Component id="lblDepartamento" min="-2" max="-2" attributes="0"/>
                           <Component id="lblLugarEx" min="-2" max="-2" attributes="0"/>
                           <Component id="lblTel_Residencia" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -50,6 +51,13 @@
                           <Component id="lblProfesion" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="lblNCuotas" pref="133" max="32767" attributes="0"/>
+                          <Component id="lblVCredito" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -67,6 +75,9 @@
                   <Component id="txtNom" alignment="1" max="32767" attributes="0"/>
                   <Component id="txtNum_Factura" alignment="0" max="32767" attributes="0"/>
                   <Component id="txtFecha_Credito" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtTCartera" max="32767" attributes="0"/>
+                  <Component id="txtVCartera" max="32767" attributes="0"/>
+                  <Component id="txtNCuotas" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -137,7 +148,22 @@
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtFecha_Credito" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="229" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblTCartera" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTCartera" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblVCredito" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtVCartera" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblNCuotas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNCuotas" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="118" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -301,6 +327,42 @@
       </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="txtFecha_Credito">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTCartera">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tipo cartera"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTCartera">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblVCredito">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Valor de Credito"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtVCartera">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtVCarteraActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNCuotas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero de Cuotas"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNCuotas">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNCuotasActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>

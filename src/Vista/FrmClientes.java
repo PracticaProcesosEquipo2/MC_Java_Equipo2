@@ -51,6 +51,12 @@ public class FrmClientes extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         txtNum_Factura = new javax.swing.JTextField();
         txtFecha_Credito = new javax.swing.JTextField();
+        lblTCartera = new javax.swing.JLabel();
+        txtTCartera = new javax.swing.JTextField();
+        lblVCredito = new javax.swing.JLabel();
+        txtVCartera = new javax.swing.JTextField();
+        lblNCuotas = new javax.swing.JLabel();
+        txtNCuotas = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -132,6 +138,24 @@ public class FrmClientes extends javax.swing.JFrame {
             }
         });
 
+        lblTCartera.setText("Tipo cartera");
+
+        lblVCredito.setText("Valor de Credito");
+
+        txtVCartera.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtVCarteraActionPerformed(evt);
+            }
+        });
+
+        lblNCuotas.setText("Numero de Cuotas");
+
+        txtNCuotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNCuotasActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -152,6 +176,7 @@ public class FrmClientes extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTCartera, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblDepartamento)
                             .addComponent(lblLugarEx)
                             .addComponent(lblTel_Residencia)
@@ -159,7 +184,12 @@ public class FrmClientes extends javax.swing.JFrame {
                             .addComponent(lblNom)
                             .addComponent(lblProfesion)
                             .addComponent(jLabel2)
-                            .addComponent(jLabel3))))
+                            .addComponent(jLabel3)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblNCuotas, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
+                            .addComponent(lblVCredito, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtProfesion)
@@ -173,7 +203,10 @@ public class FrmClientes extends javax.swing.JFrame {
                     .addComponent(txtTel_Trabajo)
                     .addComponent(txtNom, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtNum_Factura)
-                    .addComponent(txtFecha_Credito))
+                    .addComponent(txtFecha_Credito)
+                    .addComponent(txtTCartera)
+                    .addComponent(txtVCartera)
+                    .addComponent(txtNCuotas))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -229,7 +262,19 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(txtFecha_Credito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTCartera)
+                    .addComponent(txtTCartera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblVCredito)
+                    .addComponent(txtVCartera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNCuotas)
+                    .addComponent(txtNCuotas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
         pack();
@@ -266,6 +311,14 @@ public class FrmClientes extends javax.swing.JFrame {
     private void txtNum_FacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNum_FacturaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNum_FacturaActionPerformed
+
+    private void txtVCarteraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVCarteraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtVCarteraActionPerformed
+
+    private void txtNCuotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNCuotasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNCuotasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -314,19 +367,25 @@ public class FrmClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lblDireccion_Residencial;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblLugarEx;
+    private javax.swing.JLabel lblNCuotas;
     private javax.swing.JLabel lblNom;
     private javax.swing.JLabel lblProfesion;
+    private javax.swing.JLabel lblTCartera;
     private javax.swing.JLabel lblTel_Residencia;
+    private javax.swing.JLabel lblVCredito;
     public javax.swing.JTextField txtCiudad;
     public javax.swing.JTextField txtDepartamento;
     public javax.swing.JTextField txtDireccion_Residencial;
     public javax.swing.JTextField txtEmail;
     public javax.swing.JTextField txtFecha_Credito;
     public javax.swing.JTextField txtLugarEx;
+    public javax.swing.JTextField txtNCuotas;
     public javax.swing.JTextField txtNom;
     public javax.swing.JTextField txtNum_Factura;
     public javax.swing.JTextField txtProfesion;
+    public javax.swing.JTextField txtTCartera;
     public javax.swing.JTextField txtTel_Residencia;
     public javax.swing.JTextField txtTel_Trabajo;
+    public javax.swing.JTextField txtVCartera;
     // End of variables declaration//GEN-END:variables
 }

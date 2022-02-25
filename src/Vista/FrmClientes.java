@@ -35,6 +35,30 @@ public class FrmClientes extends javax.swing.JFrame {
         txtDireccion_Residencial = new javax.swing.JTextField();
         lblCiudad = new javax.swing.JLabel();
         txtCiudad = new javax.swing.JTextField();
+        lblCelula = new javax.swing.JLabel();
+        TextCelula = new javax.swing.JTextField();
+        txtLugarEx = new javax.swing.JTextField();
+        lblLugarEx = new javax.swing.JLabel();
+        lblTel_Residencia = new javax.swing.JLabel();
+        txtTel_Residencia = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        txtTel_Trabajo = new javax.swing.JTextField();
+        txtNom = new javax.swing.JTextField();
+        lblNom = new javax.swing.JLabel();
+        txtProfesion = new javax.swing.JTextField();
+        lblProfesion = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtNum_Factura = new javax.swing.JTextField();
+        txtFecha_Credito = new javax.swing.JTextField();
+        lblTCartera = new javax.swing.JLabel();
+        txtTCartera = new javax.swing.JTextField();
+        lblVCredito = new javax.swing.JLabel();
+        txtVCartera = new javax.swing.JTextField();
+        lblNCuotas = new javax.swing.JLabel();
+        txtNCuotas = new javax.swing.JTextField();
+        cmdAgregar = new javax.swing.JButton();
+        cmdEliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,27 +94,134 @@ public class FrmClientes extends javax.swing.JFrame {
             }
         });
 
+        lblCelula.setText("Cedula");
+
+        TextCelula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextCelulaActionPerformed(evt);
+            }
+        });
+
+        lblLugarEx.setText("Lugar Expedicion ");
+
+        lblTel_Residencia.setText("Teléfono de residencia");
+
+        txtTel_Residencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTel_ResidenciaActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Teléfono de trabajo ");
+
+        txtNom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomActionPerformed(evt);
+            }
+        });
+
+        lblNom.setText("Nombre Completo");
+
+        txtProfesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtProfesionActionPerformed(evt);
+            }
+        });
+
+        lblProfesion.setText("Profesion ");
+
+        jLabel2.setText("Numero de Factura");
+
+        jLabel3.setText("Fecha de  credito");
+
+        txtNum_Factura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNum_FacturaActionPerformed(evt);
+            }
+        });
+
+        lblTCartera.setText("Tipo cartera");
+
+        lblVCredito.setText("Valor de Credito");
+
+        txtVCartera.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtVCarteraActionPerformed(evt);
+            }
+        });
+
+        lblNCuotas.setText("Numero de Cuotas");
+
+        txtNCuotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNCuotasActionPerformed(evt);
+            }
+        });
+
+        cmdAgregar.setText("Agregar");
+        cmdAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdAgregarActionPerformed(evt);
+            }
+        });
+
+        cmdEliminar.setText("Eliminar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(185, 185, 185)
-                .addComponent(lblClientes, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                .addComponent(lblClientes, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
                 .addGap(215, 215, 215))
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblDepartamento)
-                    .addComponent(lblEmail)
-                    .addComponent(lblDireccion_Residencial, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblEmail)
+                            .addComponent(lblDireccion_Residencial, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCelula)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTCartera, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblDepartamento)
+                            .addComponent(lblLugarEx)
+                            .addComponent(lblTel_Residencia)
+                            .addComponent(jLabel1)
+                            .addComponent(lblNom)
+                            .addComponent(lblProfesion)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblNCuotas, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
+                            .addComponent(lblVCredito, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtProfesion)
                     .addComponent(txtDepartamento, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
                     .addComponent(txtEmail)
                     .addComponent(txtDireccion_Residencial)
-                    .addComponent(txtCiudad))
+                    .addComponent(txtCiudad)
+                    .addComponent(TextCelula)
+                    .addComponent(txtLugarEx)
+                    .addComponent(txtTel_Residencia)
+                    .addComponent(txtTel_Trabajo)
+                    .addComponent(txtNom, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtNum_Factura)
+                    .addComponent(txtFecha_Credito)
+                    .addComponent(txtTCartera)
+                    .addComponent(txtVCartera)
+                    .addComponent(txtNCuotas))
+                .addGap(93, 93, 93)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cmdAgregar)
+                    .addComponent(cmdEliminar))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -100,8 +231,8 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addComponent(lblClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDepartamento)
-                    .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDepartamento))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEmail)
@@ -109,12 +240,62 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDireccion_Residencial)
-                    .addComponent(txtDireccion_Residencial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDireccion_Residencial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmdAgregar))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblCiudad)
                     .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblCelula)
+                            .addComponent(TextCelula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(9, 9, 9)
+                        .addComponent(cmdEliminar)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtLugarEx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblLugarEx))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTel_Residencia)
+                    .addComponent(txtTel_Residencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtTel_Trabajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNom))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtProfesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProfesion))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtNum_Factura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtFecha_Credito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTCartera)
+                    .addComponent(txtTCartera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblVCredito)
+                    .addComponent(txtVCartera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNCuotas)
+                    .addComponent(txtNCuotas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
         pack();
@@ -131,6 +312,38 @@ public class FrmClientes extends javax.swing.JFrame {
     private void txtCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCiudadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCiudadActionPerformed
+
+    private void TextCelulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextCelulaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextCelulaActionPerformed
+
+    private void txtTel_ResidenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTel_ResidenciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTel_ResidenciaActionPerformed
+
+    private void txtNomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomActionPerformed
+
+    private void txtProfesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProfesionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtProfesionActionPerformed
+
+    private void txtNum_FacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNum_FacturaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNum_FacturaActionPerformed
+
+    private void txtVCarteraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVCarteraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtVCarteraActionPerformed
+
+    private void txtNCuotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNCuotasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNCuotasActionPerformed
+
+    private void cmdAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdAgregarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmdAgregarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,14 +381,38 @@ public class FrmClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JTextField TextCelula;
+    public javax.swing.JButton cmdAgregar;
+    public javax.swing.JButton cmdEliminar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblCelula;
     private javax.swing.JLabel lblCiudad;
     public javax.swing.JLabel lblClientes;
     private javax.swing.JLabel lblDepartamento;
     private javax.swing.JLabel lblDireccion_Residencial;
     private javax.swing.JLabel lblEmail;
+    private javax.swing.JLabel lblLugarEx;
+    private javax.swing.JLabel lblNCuotas;
+    private javax.swing.JLabel lblNom;
+    private javax.swing.JLabel lblProfesion;
+    private javax.swing.JLabel lblTCartera;
+    private javax.swing.JLabel lblTel_Residencia;
+    private javax.swing.JLabel lblVCredito;
     public javax.swing.JTextField txtCiudad;
     public javax.swing.JTextField txtDepartamento;
     public javax.swing.JTextField txtDireccion_Residencial;
     public javax.swing.JTextField txtEmail;
+    public javax.swing.JTextField txtFecha_Credito;
+    public javax.swing.JTextField txtLugarEx;
+    public javax.swing.JTextField txtNCuotas;
+    public javax.swing.JTextField txtNom;
+    public javax.swing.JTextField txtNum_Factura;
+    public javax.swing.JTextField txtProfesion;
+    public javax.swing.JTextField txtTCartera;
+    public javax.swing.JTextField txtTel_Residencia;
+    public javax.swing.JTextField txtTel_Trabajo;
+    public javax.swing.JTextField txtVCartera;
     // End of variables declaration//GEN-END:variables
 }

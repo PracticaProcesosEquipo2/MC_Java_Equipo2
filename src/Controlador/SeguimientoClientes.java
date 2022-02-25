@@ -41,7 +41,7 @@ public void actionPerformed(ActionEvent e) {
        JOptionPane.showMessageDialog(null, leyenda);//Se manda mensaje con elresultado de la
         //consulta de inserción
         limpiar();//se limpian las cajas de texto
-        //agregar otros botones si se necesitan implementar
+    
 }
 }
 public void iniciar(){

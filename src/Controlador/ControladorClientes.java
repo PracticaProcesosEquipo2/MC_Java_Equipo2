@@ -42,7 +42,7 @@ public class ControladorClientes implements ActionListener {
         _view.setTitle("MVC Visual");
     }
     
-    public void limpiar(){
+    public void limpiar(){        
         _view.txtCiudad.setText(null);
         _view.txtDepartamento.setText(null);
         _view.txtDireccion_Residencial.setText(null);

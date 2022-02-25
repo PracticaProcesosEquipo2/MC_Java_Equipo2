@@ -28,63 +28,76 @@
               <Component id="lblClientes" pref="247" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="215" max="-2" attributes="0"/>
           </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblDireccion_Residencial" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
-                          <Component id="lblCiudad" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
-                          <Component id="lblCelula" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCelula" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLugarEx" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="txtLugarEx" alignment="0" pref="198" max="32767" attributes="0"/>
+                          <Component id="txtCedula" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lblTCartera" min="-2" pref="92" max="-2" attributes="0"/>
                           <Component id="lblDepartamento" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblLugarEx" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblTel_Residencia" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblNom" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblProfesion" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lblNCuotas" max="32767" attributes="0"/>
+                              <Component id="lblVCredito" min="-2" pref="133" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTel_Residencia" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="lblNCuotas" pref="133" max="32767" attributes="0"/>
-                          <Component id="lblVCredito" max="32767" attributes="0"/>
+                          <Component id="txtDepartamento" pref="198" max="32767" attributes="0"/>
+                          <Component id="txtEmail" max="32767" attributes="0"/>
+                          <Component id="txtTel_Residencia" max="32767" attributes="0"/>
+                          <Component id="txtTel_Trabajo" max="32767" attributes="0"/>
+                          <Component id="txtNum_Factura" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtFecha_Credito" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtTCartera" max="32767" attributes="0"/>
+                          <Component id="txtVCartera" max="32767" attributes="0"/>
+                          <Component id="txtNCuotas" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblDireccion_Residencial" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="lblCiudad" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtDireccion_Residencial" pref="195" max="32767" attributes="0"/>
+                          <Component id="txtCiudad" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblNom" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblProfesion" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtProfesion" max="32767" attributes="0"/>
+                          <Component id="txtNom" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtProfesion" max="32767" attributes="0"/>
-                  <Component id="txtDepartamento" pref="115" max="32767" attributes="0"/>
-                  <Component id="txtEmail" max="32767" attributes="0"/>
-                  <Component id="txtDireccion_Residencial" max="32767" attributes="0"/>
-                  <Component id="txtCiudad" max="32767" attributes="0"/>
-                  <Component id="TextCelula" max="32767" attributes="0"/>
-                  <Component id="txtLugarEx" max="32767" attributes="0"/>
-                  <Component id="txtTel_Residencia" max="32767" attributes="0"/>
-                  <Component id="txtTel_Trabajo" max="32767" attributes="0"/>
-                  <Component id="txtNom" alignment="1" max="32767" attributes="0"/>
-                  <Component id="txtNum_Factura" alignment="0" max="32767" attributes="0"/>
-                  <Component id="txtFecha_Credito" alignment="0" max="32767" attributes="0"/>
-                  <Component id="txtTCartera" max="32767" attributes="0"/>
-                  <Component id="txtVCartera" max="32767" attributes="0"/>
-                  <Component id="txtNCuotas" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+              <EmptySpace pref="123" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="cmdAgregar" min="-2" max="-2" attributes="0"/>
                   <Component id="cmdEliminar" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -93,91 +106,92 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="lblClientes" min="-2" pref="62" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblDireccion_Residencial" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDireccion_Residencial" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cmdAgregar" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblCiudad" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCiudad" min="-2" max="-2" attributes="0"/>
-              </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblCelula" min="-2" max="-2" attributes="0"/>
-                          <Component id="TextCelula" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                      <Component id="cmdAgregar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                       <Component id="cmdEliminar" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtCedula" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCelula" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtLugarEx" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLugarEx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtProfesion" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblProfesion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtDireccion_Residencial" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDireccion_Residencial" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtCiudad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCiudad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblTel_Residencia" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTel_Residencia" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTel_Trabajo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNum_Factura" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFecha_Credito" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblTCartera" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTCartera" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblVCredito" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtVCartera" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblNCuotas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNCuotas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtLugarEx" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblLugarEx" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblTel_Residencia" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtTel_Residencia" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtTel_Trabajo" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtNom" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblNom" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtProfesion" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblProfesion" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtNum_Factura" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFecha_Credito" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblTCartera" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtTCartera" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblVCredito" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtVCartera" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblNCuotas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtNCuotas" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="118" max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -255,9 +269,9 @@
         <Property name="text" type="java.lang.String" value="Cedula"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="TextCelula">
+    <Component class="javax.swing.JTextField" name="txtCedula">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextCelulaActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCedulaActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

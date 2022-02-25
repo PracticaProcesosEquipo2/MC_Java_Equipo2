@@ -31,7 +31,7 @@ public class ControladorClientes implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String leyenda = "";
         if(e.getSource()==_view.cmdAgregar){
-            leyenda =_model.registrarAlta("clientes", "null, ' "+ _view.txtCiudad.getText()+" ',' "+ _view.txtDepartamento.getText()+" ',' "+ _view.txtDireccion_Residencial.getText()+" ',' "+ _view.txtEmail.getText()+" ',' "+ _view.txtFecha_Credito.getText()+" ',' "+ _view.txtLugarEx.getText()+" ',' "+ _view.txtNCuotas.getText()+" ',' "+ _view.txtNom.getText()+" ',' "+ _view.txtNum_Factura.getText()+" ',' "+ _view.txtProfesion.getText()+" ',' "+ _view.txtTCartera.getText()+" ',' "+ _view.txtTel_Residencia.getText()+" ',' "+ _view.txtTel_Trabajo.getText()+" ',' "+ _view.txtVCartera.getText()+" ',' ");
+            leyenda=_model.registrarAlta("clientes",_view.txtCedula.getText()+",'"+_view.txtLugarEx.getText()+"','"+_view.txtNom.getText()+"','"+_view.txtProfesion.getText()+"','"+_view.txtDireccion_Residencial.getText()+"','"+_view.txtCiudad.getText()+"','"+_view.txtDepartamento.getText()+"','"+_view.txtEmail.getText()+"',"+_view.txtTel_Residencia.getText()+","+_view.txtTel_Trabajo.getText()+","+_view.txtNum_Factura.getText()+",'"+_view.txtFecha_Credito.getText()+"','"+_view.txtTCartera.getText()+"',"+_view.txtVCartera.getText()+","+_view.txtNCuotas.getText());
             System.out.println(leyenda);
             JOptionPane.showMessageDialog(null, leyenda);
             limpiar();
@@ -42,7 +42,8 @@ public class ControladorClientes implements ActionListener {
         _view.setTitle("MVC Visual");
     }
     
-    public void limpiar(){        
+    public void limpiar(){
+        _view.txtCedula.setText(null);
         _view.txtCiudad.setText(null);
         _view.txtDepartamento.setText(null);
         _view.txtDireccion_Residencial.setText(null);
